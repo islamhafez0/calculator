@@ -1,0 +1,67 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.app {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.claculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  box-shadow: 2px 8px 18px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.claculator input {
+  width: 300px;
+  padding: 10px;
+  background-color: #1a1919;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  user-select: none;
+}
+.claculator div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 300px;
+  height: 300px;
+  place-items: center;
+  background-color: #1a1919;
+  color: #fff;
+}
+.claculator button {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.claculator button:active {
+  background: #333;
+}
